@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#9729;WEATHER CHANNEL</title>
+    <style>
+        form{
+            padding-top: 50px;
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        body
+       {
+        background-image: url(https://images-na.ssl-images-amazon.com/images/I/911o%2BHYt-1L.jpg);
+       }
+       fieldset{
+        color:greenyellow;
+       }
+       legend{
+        color: blue;
+       }
+       marquee{
+        color:goldenrod;
+        
+       }
+    
+       
+    </style>
+ 
+       
+</head>
+<body>
+    <marquee behavior="scroll" direction="right" scrollamount="15" >Welcome to weather channel!!</marquee>
+<div>
+    <form action=""style="text-align:center;">
+        <fieldset>
+        <legend>Weather info</legend>
+        <label for="x">Location</label>
+        <input type="text" id="x" placeholder="Enter your Location" class="init" value="rome">
+        <br><br>
+        <button style="color: orange;background-color: blueviolet;"id="submitbtn">SUBMIT</button>
+      
+        </fieldset>
+   
+    </form>
+</div>
+<div>
+    <div class="weather-body" style="text-align: center;">
+            
+
+        <div class="weather-box">
+            <p style="color:yellow">temperature</p>
+            <p class="temperature">0 <sup>°C</sup></p>
+            <p style="color:olivedrab" >WEATHER DESCRIPTION</p>
+            <p class="description">light rain</p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <div class="text">
+                    <p style="color:orange">Humidity</p>
+                    <span id="humidity">45%</span>
+                   
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <p style="color:chartreuse">Wind Speed</p>
+                    <span id="wind-speed">12Km/H</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="weather.js"></script>
+    
+</body>
+</html>
